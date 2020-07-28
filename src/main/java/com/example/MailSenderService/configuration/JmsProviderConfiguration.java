@@ -67,7 +67,7 @@ public class JmsProviderConfiguration {
     }
 
     @Bean
-    MessageListenerAdapter listenerAdapter() {
-        return new MessageListenerAdapter();
+    MessageListenerAdapter listenerAdapter(CustomEmailEventListenerAdapter listenerAdapter) {
+        return new MessageListenerAdapter(listenerAdapter, "getUserFromQueueToSentEmail");
     }
 }
