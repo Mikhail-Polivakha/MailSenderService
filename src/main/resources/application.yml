@@ -3,4 +3,16 @@ spring:
     url: jdbc:postgresql://localhost:5432/queue
     username: postgres
     password: secret
+  mail:
+    port: 587
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+          enable: true
+    host: smtp.gmail.com
+    password: 1029384756mpmp
+    username: polivakhamisha48@gmail.com
 

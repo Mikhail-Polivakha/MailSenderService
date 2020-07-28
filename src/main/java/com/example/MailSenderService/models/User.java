@@ -19,5 +19,7 @@ public class User extends BaseEntity {
 
     @Column(name = "dateOfBirth")
     private Date dateOfBirth;
+
+    private String email;
     private Long account;
 }

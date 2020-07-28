@@ -26,7 +26,7 @@ class CustomEmailEventListenerAdapterTest {
     }
 
     @Test
-    @DisplayName("Testing sending the greeting email to the client...")
+    @DisplayName("Testing calling service which send the greeting email")
     void getUserFromQueueToSentEmailTest() {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> eventListenerAdapter.getUserFromQueueToSentEmail(new UserDTO(1L,null)));
